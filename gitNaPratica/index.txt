@@ -1,0 +1,82 @@
+// verifica a versão do git
+git version
+
+//configura nome
+git config --global user.name "Brian Santos"
+
+//configura email
+git config --global user.email "briam.a.s.u.s@gmail.com"
+
+//inicializa repositorio
+git init
+
+
+//adiciona arquivo na lista de commit.
+git add itiro.txt
+
+//commit
+git commit -m "PRIMEIRO COMMIT GITNAPRATICA"
+
+
+//bate se tem algum arquivo modificado não commitado
+git status
+
+//adiciona todos os arquivos modificados ou novos na lista
+git add .
+
+//pula o stage area e manda pro repositorio direto
+git commit -a -m "terceira alteracao"
+
+//ver as modificações apertar "q" para sair do terminal
+git diff 
+
+//ver as modificações na meio antes do repositorio
+git diff --staged "q" para sair do terminal
+
+//verifica o log de commits
+git log
+
+
+//verifica o log de commits e mostra as alterações
+git log -p
+
+
+//volta o arquivo pra alteração do ultimo commit
+git checkout -- itiro.txt
+
+
+//volta o estagio de versão definida no git tag
+git checkout v0 
+
+//define marco da aplicação tipo uma release quando a aplicação ja tem uma versão nova ou beta
+// -a de anotation -m de mensagem
+git tag -a v1.0 -m "Versão 1.0 do meu site"
+
+//define marco da aplicação tipo uma release quando a aplicação ja tem uma versão nova ou beta nesse caso em um commit especifico
+// -a de anotation -m de mensagem
+// esse codigo é de um commit do git log ce54645568f24a2f17274e0602d33e4bf25df2b4
+git tag -a v0 ce54645568f24a2f17274e0602d33e4bf25df2b4 -m "Versão 1.0 do meu site"
+
+// volta pra linha de desenvolvimento atual
+git checkout master
+
+//mostra todas as ramificações de desenvolvimento branchs
+ git branch
+
+//cria nova branch de dsv nome Teste
+ git branch Teste
+
+ //muda entre as branchs
+ git checkout Teste 
+
+// puxa alterações de branchs que vc definir
+git merge Teste
+
+//sublime merge é bom para ter esse controle
+
+//git clone https://github.com/BrianSantosSilva/gitTeste.git
+clona o repositorio em local
+
+//sobi para repositorio na nuvem as alterações tentar os dois mais o 1 tinha dado certo e o  2 não
+git push origin main
+git push origin master

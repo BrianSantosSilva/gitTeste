@@ -1,0 +1,10 @@
+primerio commit do git na pratica 
+
+segunda alteração 
+
+Itiro 
+
+
+alterações pra video 
+
+git diff
