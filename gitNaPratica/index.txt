@@ -80,3 +80,8 @@ clona o repositorio em local
 //sobi para repositorio na nuvem as alterações tentar os dois mais o 1 tinha dado certo e o  2 não
 git push origin main
 git push origin master
+
+
+//comandos para baixar alterações que estão na nuvem para local- lembrar de dar commit das alterações minhas sem o push para não perder o project
+git fetch origin master
+ git merge -s recursive -X theirs origin/master
